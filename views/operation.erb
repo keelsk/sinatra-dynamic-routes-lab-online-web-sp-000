@@ -14,7 +14,7 @@
     <% elsif params[:operation] == "multiply" %>
       <%= @num1 * @num2 %>
     <% elsif params[:operation] == "divide" %>
-      <%= @num1 / @num2 %>
+      <%= @num1.to_f / @num2.to_f %>
     <% else %>
       Your options are add, subtract, multiply, or divide. Make sure you use one of those options. 
     <% end %>
